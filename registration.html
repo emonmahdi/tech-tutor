@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Tutor</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Optional for mobile responsiveness -->
+</head>
+
+<body>
+    <!-- Top Bar Start -->
+    <div class="top-bar-section">
+        <div class="container">
+            <div class="row topbar-row">
+                <div class="col-md-6">
+                    <div class="phone-email">
+                        <div>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <span>+88 01670-27 30 40</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-icon text-end">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar px-3" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    Tech Tutor
+                    <!-- <img
+              src="assets/images/logo.png"
+              class="logo img-fluid"
+              alt="Green House Logo"
+            /> -->
+                </a>
+
+                <button class="navbar-toggler custom-toggler" type="button" data-toggler>
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+                    <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Find Tutor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Contact</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                <a class="nav-link" href="social-work.html">Social Work</a>
+              </li> -->
+
+                        <!-- <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li> -->
+                    </ul>
+                </div>
+
+                <div class="d-none d-lg-block">
+                    <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn me-2">
+                        Login <i class="fas fa-paper-plane contact-icon"></i>
+                    </a>
+                    <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn">
+                        Register <i class="fas fa-paper-plane contact-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sticky Navbar -->
+        <nav class="navbar sticky-nav navbar-expand-lg px-3" id="stickyNavbar">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    Tech Tutor
+                    <!-- <img
+              src="assets/images/logo.png"
+              class="logo img-fluid"
+              alt="Green House Logo"
+            /> -->
+                </a>
+                <!-- Sticky Navbar -->
+                <button class="navbar-toggler custom-toggler" type="button" data-toggler>
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Find Tutor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-none d-lg-block">
+                    <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn me-2">
+                        Login <i class="fas fa-paper-plane contact-icon"></i>
+                    </a>
+                    <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn">
+                        Register <i class="fas fa-paper-plane contact-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu d-lg-none" id="mobileMenu">
+            <ul class="list-unstyled mt-4">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="social-work.html" class="nav-link">Social Work</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="mobile-menu-contact-btn">
+                    <a href="contact.html" class="my-btn my-btn-primary contact-btn">
+                        Contact Us <i class="fas fa-paper-plane contact-icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!----------------Hero-slider section start----------------->
+    <section id="register-section">
+        <div class="container py-5">
+            <div class="row align-items-center shadow rounded p-4">
+                <!-- Left Side: Image -->
+                <div class="col-md-6 mb-4 mb-md-0 text-center">
+                    <img src="assets/images/slider/hero3.png" alt="Register" class="img-fluid"
+                        style="max-height: 400px;">
+                </div>
+
+                <!-- Right Side: Form -->
+                <div class="col-md-6">
+                    <h3 class="mb-3 text-center">Create Your Account</h3>
+
+                    <!-- Checkbox Toggle -->
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="tutorCheck" onchange="toggleForm('tutor')">
+                        <label class="form-check-label" for="tutorCheck">Register as Tutor</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="studentCheck"
+                            onchange="toggleForm('student')" checked>
+                        <label class="form-check-label" for="studentCheck">Register as Student</label>
+                    </div>
+
+                    <!-- Tutor Form -->
+                    <form id="tutorForm" class="mt-4 d-none">
+                        <div class="mb-3">
+                            <label for="tutorName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="tutorName" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tutorSubject" class="form-label">Subject Expertise</label>
+                            <input type="text" class="form-control" id="tutorSubject" placeholder="e.g., Math, Physics">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tutorEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="tutorEmail" placeholder="Enter email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tutorPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="tutorPassword"
+                                placeholder="Create password">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Register as Tutor</button>
+                    </form>
+
+                    <!-- Student Form (👈 Default visible) -->
+                    <form id="studentForm" class="mt-4 d-none">
+                        <div class="mb-3">
+                            <label for="studentName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="studentName" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="studentClass" class="form-label">Class / Grade</label>
+                            <input type="text" class="form-control" id="studentClass"
+                                placeholder="e.g., Class 8, Grade 10">
+                        </div>
+                        <div class="mb-3">
+                            <label for="studentEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="studentEmail" placeholder="Enter email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="studentPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="studentPassword"
+                                placeholder="Create password">
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Register as Student</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+    <!---------------- Hero-slider section End ----------------->
+
+
+    <footer class="text-white pt-5 pb-4">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+
+                <!-- Logo & Description -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-graduation-cap me-2"></i>Tech Tutor
+                    </h5>
+                    <p>
+                        Tech Tutor connects students with top-rated tutors across subjects and grades. Learn smarter,
+                        grow faster,
+                        and achieve your academic goals.
+                    </p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-menu-links">
+                    <h6 class="text-uppercase fw-bold mb-4">Quick Links</h6>
+                    <p><a href="#" class="">Home</a></p>
+                    <p><a href="#" class="">Courses</a></p>
+                    <p><a href="#" class="">Tutors</a></p>
+                    <p><a href="#" class="">Contact</a></p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-2"></i> 123 Main Street, Barisal, BD</p>
+                    <p><i class="fas fa-envelope me-2"></i> support@techtutor.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +880 1234-567890</p>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Subscribe</h6>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your email" />
+                        </div>
+                        <button type="submit" class="my-btn my-btn-primary subscribe-btn w-100">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Social Media & Copyright -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Tech Tutor. All rights reserved. Developed By <a href="#" class="developed-link"
+                            target="_blank">Freelance IT</a></p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- scroll to top -->
+    <div class="scroll-top">
+        <a href="#" class="scroll-top-icon">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS & Custom JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/heroSlider.js"></script>
+    <script src="js/testimonial.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/scrollTop.js"></script>
+    <script src="js/script.js"></script>
+    <!-- AOS JS -->
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function toggleForm(type) {
+            const tutorForm = document.getElementById('tutorForm');
+            const studentForm = document.getElementById('studentForm');
+            const tutorCheck = document.getElementById('tutorCheck');
+            const studentCheck = document.getElementById('studentCheck');
+
+            if (type === 'tutor') {
+                if (tutorCheck.checked) {
+                    studentCheck.checked = false;
+                    tutorForm.classList.remove('d-none');
+                    studentForm.classList.add('d-none');
+                } else {
+                    tutorForm.classList.add('d-none');
+                }
+            } else if (type === 'student') {
+                if (studentCheck.checked) {
+                    tutorCheck.checked = false;
+                    studentForm.classList.remove('d-none');
+                    tutorForm.classList.add('d-none');
+                } else {
+                    studentForm.classList.add('d-none');
+                }
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

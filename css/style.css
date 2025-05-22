@@ -1525,7 +1525,7 @@ Testimonial Section End
 /* ===========================================
 Footer Section Start
 ==============================================*/
-.footer {
+/* .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("/assets/images/footer-white.png") no-repeat center center;
   background-size: cover;
@@ -1533,8 +1533,35 @@ Footer Section Start
   background-attachment: fixed;
   color: #fff;
   padding: 60px 0;
+} */
+
+footer{
+  background-color: #20263e;
 }
 
+
+.footer-menu-links a{
+  text-decoration: none;
+  color:#fff;
+}
+.footer-menu-links a:hover{
+  text-decoration: underline;
+  color:var(--primary)
+}
+.subscribe-btn{
+  background-color: var(--primary);
+  color:#fff;
+}
+.subscribe-btn:hover{
+  background-color: var(--secondary);
+}
+.developed-link{
+  color:var(--secondary);
+}
+.developed-link:hover{
+  color:var(--primary);
+}
+/* 
 .footer-left-content li a,
 .footer-contact-info p {
   color: #ddd;
@@ -1568,7 +1595,7 @@ Footer Section Start
 .footer .footer-social-icons a i:hover {
   transform: scale(1.2);
   color: var(--secondary-color);
-}
+} */
 
 /* ===========================================
 Footer Section End
@@ -1591,7 +1618,7 @@ Scroll Top Start
 }
 
 .scroll-top-icon {
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   color: #fff;
   border-radius: 8px;
   width: 40px;
@@ -1604,7 +1631,7 @@ Scroll Top Start
 }
 
 .scroll-top-icon:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary);
   color: #fff;
 }
 
