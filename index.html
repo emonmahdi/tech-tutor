@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Tutor</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- Optional for mobile responsiveness -->
+</head>
+
+<body>
+  <!-- Top Bar Start -->
+  <div class="top-bar-section">
+    <div class="container">
+      <div class="row topbar-row">
+        <div class="col-md-6">
+          <div class="phone-email">
+            <div>
+              <span><i class="fa-solid fa-phone"></i></span>
+              <span>+88 01670-27 30 40</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="social-icon text-end">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Top Bar End -->
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar px-3" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          Tech Tutor
+          <!-- <img
+              src="assets/images/logo.png"
+              class="logo img-fluid"
+              alt="Green House Logo"
+            /> -->
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-toggler>
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+          <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Find Tutor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Contact</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="social-work.html">Social Work</a>
+              </li> -->
+
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li> -->
+          </ul>
+        </div>
+
+        <div class="d-none d-lg-block">
+          <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn me-2">
+            Login <i class="fas fa-paper-plane contact-icon"></i>
+          </a>
+          <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn">
+            Register <i class="fas fa-paper-plane contact-icon"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar sticky-nav navbar-expand-lg px-3" id="stickyNavbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          Tech Tutor
+          <!-- <img
+              src="assets/images/logo.png"
+              class="logo img-fluid"
+              alt="Green House Logo"
+            /> -->
+        </a>
+        <!-- Sticky Navbar -->
+        <button class="navbar-toggler custom-toggler" type="button" data-toggler>
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center">
+          <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Find Tutor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-block">
+          <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn me-2">
+            Login <i class="fas fa-paper-plane contact-icon"></i>
+          </a>
+          <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn">
+            Register <i class="fas fa-paper-plane contact-icon"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu d-lg-none" id="mobileMenu">
+      <ul class="list-unstyled mt-4">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="social-work.html" class="nav-link">Social Work</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="mobile-menu-contact-btn">
+          <a href="contact.html" class="my-btn my-btn-primary contact-btn">
+            Contact Us <i class="fas fa-paper-plane contact-icon"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!----------------Hero-slider section start----------------->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="row align-items-center w-100">
+            <!-- Left Column: Text -->
+            <div class="col-md-6 text-dark">
+              <div class="hero-text">
+                <h1>Unlock Your Learning Potential with Tech Tutor</h1>
+                <p>
+                  Empowering learners with personalized education experiences. Whether you're looking to improve your
+                  grades, prepare for exams, or explore new skills, Tech Tutor connects you with expert mentors who
+                  guide you every step of the way—anytime, anywhere.
+                </p>
+                <div class="hero-buttons">
+                  <a href="#" class="btn btn-tech-primary me-3">
+                    Register as Student <i class="fas fa-user-graduate"></i>
+                  </a>
+                  <a href="#" class="btn btn-tech-secondary">
+                    Become a Tutor <i class="fas fa-chalkboard-teacher"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Column: Illustration -->
+            <div class="col-md-6 text-end">
+              <img src="assets/images/slider/hero2.png" alt="Tech Tutor" class="img-fluid" style="max-height: 400px;" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="row align-items-center w-100">
+            <!-- Left Column: Text -->
+            <div class="col-md-6 text-dark">
+              <div class="hero-text">
+                <h1>Learn Anything, Anytime, From Anywhere with Expert Tutors</h1>
+                <p>
+                  Say goodbye to traditional limitations. With Tech Tutor, access live classes, recorded lessons, and
+                  interactive sessions on any device. Our platform ensures that learning continues seamlessly whether
+                  you're at home, in a café, or on the go.
+                </p>
+                <div class="hero-buttons">
+                  <a href="#" class="btn btn-tech-primary me-3">
+                    Join Now <i class="fas fa-paper-plane"></i>
+                  </a>
+                  <a href="#" class="btn btn-tech-secondary">
+                    Explore Courses <i class="fas fa-book-reader"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Column: Illustration -->
+            <div class="col-md-6 text-end">
+              <img src="assets/images/slider/hero3.png" alt="Online Classes" class="img-fluid"
+                style="max-height: 400px;" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="row align-items-center w-100">
+            <!-- Left Column: Text -->
+            <div class="col-md-6 text-dark">
+              <div class="hero-text">
+                <h1>A Personalized Tutoring Experience Tailored Just for You</h1>
+                <p>
+                  Tech Tutor offers a smarter approach to education—track your progress with interactive dashboards,
+                  schedule sessions at your convenience, and collaborate with tutors who specialize in your academic
+                  goals. We're redefining the way students and tutors connect in the digital age.
+                </p>
+                <div class="hero-buttons">
+                  <a href="#" class="btn btn-tech-primary me-3">
+                    Get Started <i class="fas fa-arrow-right"></i>
+                  </a>
+                  <a href="#" class="btn btn-tech-secondary">
+                    Learn More <i class="fas fa-info-circle"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Column: Illustration -->
+            <div class="col-md-6 text-end">
+              <img src="assets/images/slider/hero4.png" alt="Tutor Dashboard" class="img-fluid"
+                style="max-height: 400px;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!---------------- Hero-slider section End ----------------->
+
+  <!---------------- Footer section Start ----------------->
+  <footer class="footer bg-dark text-light pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <!-- About Us -->
+        <div class="col-md-4 col-lg-3 mb-4">
+          <div class="footer-left-content">
+            <h5 class="text-uppercase mb-3">Our Services</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="footer-link"><i class="fa-regular fa-hand-point-right"></i> Green House
+                  Design</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link"><i class="fa-regular fa-hand-point-right"></i>
+                  Architectural Planning</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link"><i class="fa-regular fa-hand-point-right"></i> Landscape
+                  Design</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link"><i class="fa-regular fa-hand-point-right"></i> Interior
+                  Consulting</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link"><i class="fa-regular fa-hand-point-right"></i>
+                  Sustainability Reports</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-6 mb-4 text-center">
+          <!-- <h5 class="text-uppercase mb-3">GreenHouse Consultant</h5> -->
+          <div class="footer-middle-content">
+            <div class="footer-logo">
+              <a href="#">
+                <img src="assets/images/logo.png" class="img-fluid" width="100" alt="" />
+              </a>
+            </div>
+            <p>
+              We specialize in sustainable architecture, eco-friendly housing,
+              and landscape design. Creating spaces that are in harmony with
+              nature.
+            </p>
+            <div class="footer-social-icons mt-3">
+              <a href="#" class="text-light me-2"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#" class="text-light me-2"><i class="fab fa-instagram fa-lg"></i></a>
+              <a href="#" class="text-light me-2"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="#" class="text-light"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Info -->
+        <div class="col-md-6 col-lg-3 mb-4 footer-contact-info">
+          <h5 class="text-uppercase mb-3">Contact Info</h5>
+          <p>
+            <i class="fas fa-map-marker-alt me-2"></i> 123 Eco Street,
+            Barisal, Bangladesh
+          </p>
+          <p><i class="fas fa-phone me-2"></i> +880 1234 567 890</p>
+          <p><i class="fas fa-envelope me-2"></i> info@greenhouse.com</p>
+
+          <!-- Newsletter -->
+          <form class="mt-3">
+            <label for="newsletter" class="form-label">Subscribe to our newsletter</label>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Email Address" id="newsletter" />
+              <button class="my-btn my-btn-primary" type="submit">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="bg-secondary" />
+
+      <div class="row text-center">
+        <div class="col-12">
+          <p class="mb-0">
+            &copy; 2025 GreenHouse Consultant. All Rights Reserved. Designed
+            with ❤️ <a href="#">Freelance IT </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!---------------- Footer section end ----------------->
+
+  <!-- scroll to top -->
+  <div class="scroll-top">
+    <a href="#" class="scroll-top-icon">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <!-- Bootstrap JS & Custom JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/sticky.js"></script>
+  <script src="js/heroSlider.js"></script>
+  <script src="js/testimonial.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/client.js"></script>
+  <script src="js/scrollTop.js"></script>
+  <script src="js/script.js"></script>
+  <!-- AOS JS -->
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
