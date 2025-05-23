@@ -117,14 +117,14 @@ Section Title
 .section-title h2 {
   margin-bottom: 15px;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--primary);
   position: relative;
   padding-bottom: 15px;
   display: inline-block;
 }
 
 .section-span-text {
-  color: var(--secondary-color);
+  color: var(--secondary);
 }
 
 /* Decorative line */
@@ -136,7 +136,7 @@ Section Title
   transform: translateX(-50%);
   height: 2px;
   width: 100%; /* full width of h2 */
-  background-color: var(--primary-color);
+  background-color: var(--primary);
 }
 
 /* Decorative diamond */
@@ -148,8 +148,8 @@ Section Title
   transform: translateX(-50%) rotate(45deg);
   height: 14px;
   width: 14px;
-  background: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  background: var(--secondary);
+  border: 2px solid var(--secondary);
 }
 
 
@@ -168,7 +168,7 @@ Section Title
   height: 30px;
   line-height: 30px;
   border-radius: 5px;
-  background-color: var(--primary-color);
+  /* background-color: #fff; */
   display: inline-block;
   text-align: center;
   margin: 0 auto;
@@ -177,7 +177,7 @@ Section Title
   transition: 0.3s;
 }
 .social-icon a:hover {
-  background-color: var(--secondary-color); 
+  background-color: var(--secondary); 
 }
 /* --------------- Top Bar End--------------------- */
 /* ====================================
@@ -261,14 +261,7 @@ textarea:focus {
 /* ===================================================
    📩 Common Padding Section
 =================================================== */
-#about-us,
-#services,
-#projects,
-#why-choose-us,
-#counter-section,
-#client-section,
-#testimonial-section,
-#news-article-section {
+#tutor-section {
   padding: 30px 20px;
 }
 /* ===================================================
@@ -295,7 +288,7 @@ textarea:focus {
   z-index: 10;
 }
 .navbar-nav .active {
-  color: var(--secondary-color) !important;
+  color: var(--secondary) !important;
   font-weight: bold; 
 }
 
@@ -652,627 +645,237 @@ Hero Slider Area Section Start
 /* ====================================
 Hero Slider Area Section End
 ========================================*/
-
 /* ====================================
-About Us Section Start
-======================================== */
-#about-us {
-  background: #f0f9f4;
-  /* background: url('/assets/images/03.png') no-repeat center;
-  background-size: contain;
-  background-attachment: scroll;
-  height: auto; */
-  /* padding: 60px 20px;  */
-  overflow: hidden;
+Tutor Area Section Start
+========================================*/
+.single-tutor{
+  text-align: center;
+  border:3px solid var(--secondary);
+  border-radius: 5px;
+  margin-top: 15px;
 }
-.abou-main-title {
-  font-size: 36px;
-  font-weight: 700;
-  color: #222;
-  line-height: 1.4;
+.single-tutor img{
+  /* border-radius: 50%;  */
 }
-
-.about-img {
-  border-radius: 12px;
-  overflow: hidden;
+.single-tutor-content{
+  background-color: var(--secondary);
+  padding:10px 0;
 }
-
-.about-img img {
-  object-fit: cover;
-  border-radius: 12px;
-  transition: transform 0.5s ease;
+.ratings span i{
+  color:#ffd60a;
 }
-
-.about-img:hover img {
-  transform: scale(1.03);
+.single-tutor h3{
+  font-size: 18px;
+  margin-bottom: 0;
 }
-
-.progress-section {
-  margin-top: 30px;
+.tutor-social-icon{
+  /* margin-bottom: -80px; */
 }
-
-.progress-label {
-  font-weight: 600;
-  font-size: 1rem;
-  min-width: 100px;
-  color: #444;
-}
-
-.custom-progress-bar {
-  background-color: #e9ecef;
-  border-radius: 20px;
-  height: 14px;
-  flex: 1;
-  overflow: hidden;
-  position: relative;
-}
-
-.fill-bar {
-  height: 100%;
-  border-radius: 20px;
-  width: 0;
-  transition: width 1.5s ease-in-out;
-}
-
-.bg-gradient-design {
-  background: linear-gradient(90deg, var(--primary-color));
-}
-
-.bg-gradient-arch {
-  background: linear-gradient(90deg, var(--primary-color));
-}
-
-.percentage-text {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #333;
-}
-
-/* ===========================================
-Our Services Section Start
-==============================================*/
-#services {
-  background-color: #fff;
-}
-.service-card:hover {
-  transform: translateY(-5px);
-  background-color: #f1fdf4;
-  transition: all 0.3s ease;
-}
-
-.service-icon i {
-  background: #e6f4ea;
-  padding: 15px;
+.tutor-social-icon a{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
   border-radius: 50%;
+  color:#000; 
 }
-/* .service-card-wrapper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  margin-bottom: 15px;
-} */
-.service-card-wrapper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+.tutor-social-icon a:hover{ 
+  color:#fff;
+}
+/* ====================================
+Benifit Section Start
+========================================*/
+.benefits-section {
+  background: #f9fbfd;
+  padding: 60px 0;
 }
 
-.service-card-custom {
-  background-color: #fff;
-  transition: all 0.5s ease;
-  border-radius: 8px;
-  width: 98%;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); */
-  /* box-shadow: 0 0 20px rgba(0, 184, 148, 0.3); */
-}
-
-/* .service-card-custom:hover {
-  width: 100%;
-  box-shadow: 0 0 20px rgba(0, 184, 148, 0.3);
-} */
-
-.icon-area {
-  min-width: 70px;
-}
-
-.icon-number {
-  font-size: 1.8rem;
-  color: #aaa;
+.benefits-title {
+  font-size: 2.5rem;
   font-weight: bold;
-  letter-spacing: 1px;
+  color: #1e2a38;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.service-content h5 {
-  font-size: 1.3rem;
-  margin-bottom: 18px;
-  color: #222;
+.benefit-box {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+  height: 100%;
 }
 
-.service-content p {
+.benefit-box:hover {
+  transform: translateY(-8px);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.benefit-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.benefit-text {
   font-size: 0.95rem;
-  line-height: 1.6;
+  color: #555;
 }
 
-/* .feature-list {
-  list-style-type: disc;
-  font-size: 0.9rem;
-  color: #444;
-} */
-/* ===== */
-.styled-feature-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+  font-size: 1rem;
 }
-
-.styled-feature-list li {
-  display: flex;
-  align-items: center;
-  font-size: 0.95rem;
-  padding: 8px 12px;
-  margin-bottom: 6px;
-  /* border-left: 3px solid #00b894; */
-  background: #f8f9fa;
-  color: #333;
-  transition: all 0.3s ease;
-}
-
-.styled-feature-list li:hover {
-  background-color: #eafaf2;
-  transform: translateX(4px);
-  box-shadow: 0 2px 5px rgba(0, 184, 148, 0.1);
-}
-
-.styled-feature-list li i {
-  min-width: 18px;
-}
-
-/* ===== */
-
-.card-line-before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 3px;
-  background-color: var(--primary-color);
-  transition: all 0.5s ease;
-  opacity: 1;
-}
-
-.card-line-before {
-  top: 0;
-  left: 20px;
-}
-
-/* .card-line-after {
-  bottom: 0;
-  right: 20px;
-} */
-
-.service-card-custom:hover .card-line-before {
-  width: 100%;
-  left: 0;
-}
-
-/* .service-card-custom:hover .card-line-after {
-  width: 100%;
-  right: 0;
-} */
 
 @media (max-width: 768px) {
-  .service-card-custom {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .icon-area {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .icon-number {
-    margin-top: 0;
+  .benefits-title {
+    font-size: 2rem;
   }
 }
+/* ====================================
+Benifit Section End
+========================================*/
+/* ====================================
+Tutor Area Section End
+========================================*/
 
-@media (max-width: 576px) {
-  .service-icon i {
-    font-size: 1.5rem;
-    padding: 10px;
-  }
-}
-/* ===========================================
-Our Services Section End
-==============================================*/
-/* ===========================================
-Our Projects Section Start
-==============================================*/
-#projects .card:hover {
-  transform: scale(1.02);
-  transition: 0.3s ease-in-out;
-  background-color: #f6fff8;
-}
 
-#projects .card-title {
-  font-size: 1.2rem;
+/* =================Counter Section Start============================ */
+.counter-section .section-title {
+  margin-bottom: 80px;
 }
-
-/* #projects img {
-  height: 230px;
-  object-fit: cover;
-} */
-
-.project-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-/* .project-img {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.project-img img {
-  width: 100%;
-  height: auto;
-  display: block;
-} */
-.project-img {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  width: 100%;
-  aspect-ratio: 272 / 361;
-  max-width: 300px;
-  margin: auto;
-  /* margin-bottom: 15px; */
-}
-
-.project-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Overlay background */
-.project-img-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 800px;
-  opacity: 0;
-  /* margin: 20px; */
-  transition: opacity 0.3s ease-in-out;
-}
-
-/* Flip content */
-.overlay-content {
-  transform: rotateX(-90deg);
-  transform-origin: top;
-  transition: transform 0.6s ease-in-out;
-  color: #fff;
+.single-counter-item {
   text-align: center;
-  backface-visibility: hidden;
+  border-right: 2px solid #ddd;
 }
-
-/* On hover: fade in and flip down the overlay */
-.project-img:hover .project-img-overlay {
-  opacity: 1;
-}
-
-.project-img:hover .overlay-content {
-  transform: rotateX(0deg); /* Flip down to show */
-}
-
-/* Text styles */
-.overlay-content h4 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.overlay-content p {
-  font-size: 1rem;
-  margin-bottom: 15px;
-}
-
-.overlay-content .view-link {
-  display: inline-block;
-  background-color: var(--primary-color);
+.single-counter-item h2 {
+  margin-bottom: 5px;
   color: #fff;
-  padding: 6px 15px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  text-decoration: none;
-  transition: background-color 0.3s;
+  font-size: 40px;
+  font-weight: 700;
+}
+/* =================Counter Section End============================ */
+
+/* =================Testimonial Section Start============================ */
+.testimonials-section {
+  padding: 60px 0; 
+  /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../assets/images/hero-2.jpg"); */
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.testimonial-area {
+  padding: 60px 0;
+  background: #f9f9f9;
 }
 
-.overlay-content .view-link:hover {
-  background-color: var(--secondary-color);
-}
-
-/* ===========================================
-Our Portfolio Section End
-==============================================*/
-/* ===========================================
-Video Gallry Section Start
-==============================================*/
-.video-gallery-section {
+/* .single-testimonial {
   background: #fff;
-}
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-bottom: 86.25%; /* 16:9 Aspect Ratio fallback */
-  height: 0; /* Required for padding-bottom trick */
-  overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;  
+} */
+.single-testimonial {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
+.reviews {
+  margin-bottom: 12px;
+}
+.reviews i {
+  color: #fbc02d;
+  margin-right: 4px;
+}
+
+.single-testimonial p {
+  flex: 1;
+  margin: 0 0 18px 0;
+  line-height: 1.55;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.testimonial-footer h4 {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.testimonial-footer p {
+  margin-bottom: 0;
+}
+.testimonial-footer img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.swiper {
+  padding: 30px 10px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 0px);
+  top: var(--swiper-pagination-top, auto);
   left: 0;
   width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 12px;
 }
 
-
-/* ===========================================
-Video Gallry Section End
-==============================================*/
-/* ===========================================
-Why Choose Us Section Start
-==============================================*/
-#why-choose-us {
-  background-color: #f8f9fa;
-  position: relative;
-  overflow: hidden;
-}
-/* #why-choose-us:before {
-  position: absolute;
-  content: "";
-  width: 20%;
-  height: 40%;
-  background-color: #8CBD3B;
-  right: -170px;
-  top: 0;
-  border-top-left-radius: 400px;
-  border-bottom-left-radius: 400px;
-}
-#why-choose-us:after {
-  position: absolute;
-  content: "";
-  width: 20%;
-  height: 40%;
-  background-color: #8CBD3B;
-  left: -170px;
-  bottom: 0;
-  border-top-right-radius: 400px;
-  border-bottom-right-radius: 400px;
-  z-index: 100;
-}   */
-#why-choose-us .fa-3x {
-  transition: transform 0.3s ease;
-}
-
-#why-choose-us .text-center:hover .fa-3x {
-  transform: scale(1.2);
-}
-
-#why-choose-us h5 {
-  font-size: 1.1rem;
-}
-.single-choose {
-  border-left: 1px solid #1b5e20;
-  border-right: 1px solid #1b5e20;
-  border-radius: 8px;
-  transition: 0.4s;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-.single-choose-col {
-  z-index: 900;
-}
-.why-icon {
-  color: var(--primary-color);
-}
-
-/* ===========================================
-Why Choose Us Section End
-==============================================*/
-/* ------------------------------------------------
-   News And Article Section Start 
---------------------------------------------------- */
-#news-article-section {
-  background-color: #f2f7f9;
-  overflow: hidden;
-}
-.right-side-news img {
-  width: 100%;
+/* ====== */
+.swiper-slide {
   height: auto;
-  aspect-ratio: 444 / 223;
-  object-fit: cover;
-  border-radius: 8px; /* Optional for rounded corners */
-  display: block;
-  max-width: 100%;
-}
-
-.blog-section .news-content h3 {
-  font-size: 24px;
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-.blog-section .news-content p {
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-.blog-section .read-more-link {
-  text-decoration: none;
-  color: #000;
-}
-.blog-section .read-more-link:hover {
-  color: var(--primary-color);
-}
-.blog-section  .read-more-link .fa-arrow-right-long {
-  transition: 0.4s;
-}
-.blog-section  .read-more-link:hover .fa-arrow-right-long {
-  margin-left: 10px;
-}
-/* ============== */
-.blog-section  .left-new-top-heading {
-  font-weight: 300;
-  margin-bottom: 20px;
-}
-.blog-section  .single-blog-content {
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
 }
 
-.blog-image {
-  width: 143px;
-  height: 87px;
-  flex-shrink: 0;
+.testimonial-slider .swiper-wrapper {
+  align-items: stretch;
+}
+
+/* =================Testimonial Section End============================ */
+/* =================Subscribe Section Start============================ */
+#newsletter-section { 
+  padding:40px 0;
+  background-color: #E1EDFF;
   overflow: hidden;
-  border-radius: 6px; /* Optional: rounded corners */
+} 
+#newsletter-section input{
+  border:1px solid var(--primary);
 }
 
-.blog-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* #news-article-section .blog-image {
-  flex: 0 0 auto;
-  max-width: 250px;
-}
-
-#news-article-section .blog-image img {
-  width: 100%;
-  border-radius: 8px;
-} */
-
-#news-article-section .blog-details {
-  flex: 1;
-  min-width: 250px;
-}
-
-#news-article-section .blog-title {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-#news-article-section .blog-title a {
-  color: #000;
-}
-#news-article-section .blog-title a:hover {
-  color: var(--primary-color);
-}
-
-#news-article-section .blog-author,
-#news-article-section .reading-time {
-  font-size: 0.875rem;
-  color: #666;
-  margin-bottom: 0.25rem;
-}
-#news-article-section .read-more-blog-link {
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 22px;
-  font-weight: 500;
-}
+/* =================Subscribe Section End============================ */
+ 
 
 
-/* ------------------------------------------------
-   News And Article Section End 
---------------------------------------------------- */
-/* ===========================================
-Client Section Start
-==============================================*/
-#client-section .slider-wrapper {
-  position: relative;
-  overflow: hidden;
-  /* max-width: 1200px; */
-  margin: 50px auto;
-  border-radius: 10px;
-  /* background: #f8f9fa; */
-  /* padding: 20px; */
-}
 
-#client-section .slider-track {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-#client-section .logo-item {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#client-section .logo-item img {
-  max-height: 70px;
-  max-width: 100%;
-}
-
-#client-section .client-slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 5;
-  /* background: rgba(0, 0, 0, 0.5); */
-  border: none;
-  /* padding: 10px; */
-  color: #fff;
-  cursor: pointer;
-  border-radius: 50%;
-  background: var(--primary-color);
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-  text-align: center;
-}
-
-#client-section .client-slider-btn.left {
-  left: 10px;
-}
-
-#client-section .client-slider-btn.right {
-  right: 10px;
-}
-/* ===========================================
-Client Section End
-==============================================*/
 /* =================Counter Section Start ================*/
 
 #counter-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("/assets/images/counter-bg.jpg");
   height: auto;
   background-position: center center;
@@ -1294,8 +897,8 @@ Client Section End
 
 /* Decorative diamond */
 #counter-section .section-title h2::after {
-  background: var(--secondary-color);
-  border: 2px solid var(--primary-color);
+  background: var(--secondary);
+  border: 2px solid var(--primary);
 }
 
 .single-counter {
@@ -1350,120 +953,7 @@ Client Section End
   }
 }
 
-/* =================Counter Section End ==================*/
-/* ===========================================
-Testimonial Section Start
-==============================================*/
-#testimonial-section {
-  background-color: #fff;
-  padding: 60px 20px;
-  position: relative;
-}
-
-#testimonial-section .slider-wrapper {
-  position: relative;
-  /* padding: 0 50px; */
-}
-
-#testimonial-section .testimonial-slider {
-  display: flex;
-  gap: 20px;
-  transition: transform 0.6s ease-in-out;
-}
-
-#testimonial-section .slider-container {
-  overflow: hidden;
-  padding: 30px 10px;
-}
-
-#testimonial-section .testimonial-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-@media (min-width: 576px) {
-  #testimonial-section .testimonial-card {
-    flex: 0 0 80%;
-  }
-}
-
-@media (min-width: 768px) {
-  #testimonial-section .testimonial-card {
-    flex: 0 0 45%;
-  }
-}
-
-#testimonial-section .testimonial-card p {
-  font-style: italic;
-  color: #34495e;
-}
-
-#testimonial-section .testimonial-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 2px solid var(--primary-color);
-  padding: 5px;
-  object-fit: cover;
-  margin-right: 15px;
-  margin-top: -55px;
-}
-
-#testimonial-section .client-info {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  /* margin-top: 20px; */
-}
-
-#testimonial-section .client-name {
-  font-weight: bold;
-  margin-bottom: 0;
-  color: #2c3e50;
-  margin-top: 10px;
-}
-
-#testimonial-section .client-role {
-  font-size: 0.9rem;
-  color: #7f8c8d;
-  margin-bottom: 20px;
-}
-
-#testimonial-section .arrow-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--primary-color);
-  color: #fff;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 10;
-}
-
-#testimonial-section .arrow-left {
-  left: 10px;
-}
-
-#testimonial-section .arrow-right {
-  right: 10px;
-}
-
-#testimonial-section .arrow-btn:hover {
-  background-color: var(--secondary-color);
-}
-/* ===========================================
-Testimonial Section End
-==============================================*/
+/* =================Counter Section End ==================*/ 
 /* ------------------------------------------------
    FAQ Section Start 
 --------------------------------------------------- */
