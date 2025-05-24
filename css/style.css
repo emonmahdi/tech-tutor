@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 /* ====================================
    🔥 GLOBAL STYLES (RESET + VARIABLES)
 ==================================== */
@@ -12,13 +12,15 @@
 } */
 
 :root {
-  --primary: #0d6efd;      /* Main blue */
-  --secondary: #00bcd4;    /* Accent cyan */
-  --bg-light: #f0f4f8;     /* Light background */
-  --text-color: #1a1a1a;   /* Body text */
-  --btn-hover: #084298;    /* Dark blue hover */
-  --btn-light: #e7f1ff;    /* Light blue background */
-  --btn-outline: #d0e3ff;  /* Light outline */
+  --primary: #0d6efd; /* Main blue */
+  --secondary: #00bcd4; /* Accent cyan */
+  --bg-light: #f0f4f8; /* Light background */
+  --text-color: #1a1a1a; /* Body text */
+  --heading-text-color: #1a1a1a; /* Body text */
+  --sub-heading-text-color: #444C60; /* Body text */
+  --btn-hover: #084298; /* Dark blue hover */
+  --btn-light: #e7f1ff; /* Light blue background */
+  --btn-outline: #d0e3ff; /* Light outline */
   --btn-disabled: #c0c9d6; /* Disabled */
 }
 
@@ -114,10 +116,18 @@ Section Title
   width: 50%;
 }
 
-.section-title h2 {
+.section-title h6 {
   margin-bottom: 15px;
   text-transform: uppercase;
   color: var(--primary);
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+}
+.section-title h2 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: var(--heading-text-color);
   position: relative;
   padding-bottom: 15px;
   display: inline-block;
@@ -126,8 +136,7 @@ Section Title
 .section-span-text {
   color: var(--secondary);
 }
-
-/* Decorative line */
+/*  
 .section-title h2::before {
   content: "";
   position: absolute;
@@ -135,11 +144,10 @@ Section Title
   bottom: 0;
   transform: translateX(-50%);
   height: 2px;
-  width: 100%; /* full width of h2 */
+  width: 100%;  
   background-color: var(--primary);
 }
-
-/* Decorative diamond */
+ 
 .section-title h2::after {
   content: "";
   position: absolute;
@@ -150,8 +158,7 @@ Section Title
   width: 14px;
   background: var(--secondary);
   border: 2px solid var(--secondary);
-}
-
+} */
 
 /* --------------- Top Bar Start--------------------- */
 .top-bar-section {
@@ -159,7 +166,7 @@ Section Title
   color: #fff;
   padding: 8px 0;
 }
-.topbar-row{
+.topbar-row {
   display: flex;
   align-items: center;
 }
@@ -177,7 +184,7 @@ Section Title
   transition: 0.3s;
 }
 .social-icon a:hover {
-  background-color: var(--secondary); 
+  background-color: var(--secondary);
 }
 /* --------------- Top Bar End--------------------- */
 /* ====================================
@@ -238,7 +245,6 @@ Section Title
   opacity: 0.6;
 }
 
-
 /* ===================================================
    📩 FORM ELEMENTS
 =================================================== */
@@ -289,36 +295,35 @@ textarea:focus {
 }
 .navbar-nav .active {
   color: var(--secondary) !important;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 /* ============== */
- /* Reset default border */
- 
+/* Reset default border */
 
 .nav-item {
-  position: relative; 
+  position: relative;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-.nav-link{
+.nav-link {
   padding: 5px 0 !important;
-  color:#000;
+  color: #000;
   text-transform: uppercase;
 }
-.nav-link:hover{
-  color:var(--secondary-color);
+.nav-link:hover {
+  color: var(--secondary-color);
   /* font-weight: bold; */
 }
 /* Top border effect */
- .nav-link::before {
-  content: '';
-  position: absolute; 
+.nav-link::before {
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: var(--primary-color);  
+  background-color: var(--primary-color);
   transition: width 0.3s ease;
 }
 
@@ -389,18 +394,18 @@ textarea:focus {
 .mobile-menu .list-unstyled li {
   line-height: 2.3;
 }
-.mobile-menu .nav-link{
-  color:#fff;
+.mobile-menu .nav-link {
+  color: #fff;
 }
-.mobile-menu-contact-btn .log-reg-btn{
+.mobile-menu-contact-btn .log-reg-btn {
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
-  width: auto; 
+  width: auto;
   font-size: 1rem;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .mobile-menu-contact-btn {
@@ -514,8 +519,8 @@ textarea:focus {
 /* ====================================
 Hero Slider Area Section Start
 ========================================*/
-#heroCarousel{
-  background-color: #E1EDFF;
+#heroCarousel {
+  background-color: #e1edff;
 }
 #heroCarousel .hero-text p {
   margin: 15px 0;
@@ -593,39 +598,40 @@ Hero Slider Area Section Start
 .carousel-caption .btn {
   margin: 0 10px;
 }
- 
-.carousel-control-prev-icon { 
-    background-color: var(--primary);
-    padding: 20px;
-    border-radius: 5px;
+
+.carousel-control-prev-icon {
+  background-color: var(--primary);
+  padding: 20px;
+  border-radius: 5px;
 }
-.carousel-control-next-icon { 
-    background-color: var(--primary);
-    padding: 20px;
-    border-radius: 5px;
+.carousel-control-next-icon {
+  background-color: var(--primary);
+  padding: 20px;
+  border-radius: 5px;
 }
-.carousel-control-next, .carousel-control-prev {  
-    opacity: 1; 
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
 }
 
 .carousel-control-prev-icon {
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100% 100%;
-    margin-left: -40px;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  margin-left: -40px;
 }
 
-.carousel-control-next-icon{
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100% 100%;
-    margin-right: -40px;
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  margin-right: -40px;
 }
 
 @media (max-width: 768px) {
@@ -646,41 +652,100 @@ Hero Slider Area Section Start
 Hero Slider Area Section End
 ========================================*/
 /* ====================================
+About Section Start
+========================================*/
+#about-us-section {
+  padding: 50px 0;
+}
+#about-us-section .section-title {
+  text-align: left;
+  width: 100%;
+}
+.discount-offer {
+  padding: 10px;
+  background-color: #fef1eb;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid var(--primary);
+}
+.discount-offer h4 {
+  font-size: 15px;
+}
+.our-mission,
+.our-vision {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.mission-icon span i,
+.vision-icon span i {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  display: inline-block;
+  text-align: center;
+  background-color: #f1f5fa;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  color:var(--primary);
+  font-size: 20px;
+}
+.mission-text h4,
+.vision-text h4 {
+  margin-bottom: 6px;
+  color:var(--sub-heading-text-color)
+}
+.border-dashed hr {
+  border: none;
+  border-top: 1px dashed #000; /* black dashed line, 2px thick */
+}
+.ceo-signature{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* ====================================
+About Section End
+========================================*/
+/* ====================================
 Tutor Area Section Start
 ========================================*/
-.single-tutor{
+.single-tutor {
   text-align: center;
-  border:3px solid var(--secondary);
+  border: 3px solid var(--secondary);
   border-radius: 5px;
   margin-top: 15px;
 }
-.single-tutor img{
+.single-tutor img {
   /* border-radius: 50%;  */
 }
-.single-tutor-content{
+.single-tutor-content {
   background-color: var(--secondary);
-  padding:10px 0;
+  padding: 10px 0;
 }
-.ratings span i{
-  color:#ffd60a;
+.ratings span i {
+  color: #ffd60a;
 }
-.single-tutor h3{
+.single-tutor h3 {
   font-size: 18px;
   margin-bottom: 0;
 }
-.tutor-social-icon{
+.tutor-social-icon {
   /* margin-bottom: -80px; */
 }
-.tutor-social-icon a{
+.tutor-social-icon a {
   width: 30px;
   height: 30px;
   line-height: 30px;
   display: inline-block;
   border-radius: 50%;
-  color:#000; 
+  color: #000;
 }
-.tutor-social-icon a:hover{ 
-  color:#fff;
+.tutor-social-icon a:hover {
+  color: #fff;
 }
 /* ====================================
 Benifit Section Start
@@ -702,7 +767,7 @@ Benifit Section Start
   background: white;
   border-radius: 12px;
   padding: 30px 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease;
   height: 100%;
 }
@@ -747,7 +812,6 @@ Benifit Section End
 Tutor Area Section End
 ========================================*/
 
-
 /* =================Counter Section Start============================ */
 .counter-section .section-title {
   margin-bottom: 80px;
@@ -766,7 +830,7 @@ Tutor Area Section End
 
 /* =================Testimonial Section Start============================ */
 .testimonials-section {
-  padding: 60px 0; 
+  padding: 60px 0;
   /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../assets/images/hero-2.jpg"); */
   background-size: cover;
@@ -858,19 +922,16 @@ Tutor Area Section End
 
 /* =================Testimonial Section End============================ */
 /* =================Subscribe Section Start============================ */
-#newsletter-section { 
-  padding:40px 0;
-  background-color: #E1EDFF;
+#newsletter-section {
+  padding: 40px 0;
+  background-color: #e1edff;
   overflow: hidden;
-} 
-#newsletter-section input{
-  border:1px solid var(--primary);
+}
+#newsletter-section input {
+  border: 1px solid var(--primary);
 }
 
 /* =================Subscribe Section End============================ */
- 
-
-
 
 /* =================Counter Section Start ================*/
 
@@ -953,7 +1014,7 @@ Tutor Area Section End
   }
 }
 
-/* =================Counter Section End ==================*/ 
+/* =================Counter Section End ==================*/
 /* ------------------------------------------------
    FAQ Section Start 
 --------------------------------------------------- */
@@ -1025,31 +1086,30 @@ Footer Section Start
   padding: 60px 0;
 } */
 
-footer{
+footer {
   background-color: #20263e;
 }
 
-
-.footer-menu-links a{
+.footer-menu-links a {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
 }
-.footer-menu-links a:hover{
+.footer-menu-links a:hover {
   text-decoration: underline;
-  color:var(--primary)
+  color: var(--primary);
 }
-.subscribe-btn{
+.subscribe-btn {
   background-color: var(--primary);
-  color:#fff;
+  color: #fff;
 }
-.subscribe-btn:hover{
+.subscribe-btn:hover {
   background-color: var(--secondary);
 }
-.developed-link{
-  color:var(--secondary);
+.developed-link {
+  color: var(--secondary);
 }
-.developed-link:hover{
-  color:var(--primary);
+.developed-link:hover {
+  color: var(--primary);
 }
 /* 
 .footer-left-content li a,
@@ -1289,8 +1349,8 @@ Blog Page Style Start
   /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); */
   margin-bottom: 10px;
 }
-.blog-card .my-btn{
-  padding:7px 12px;
+.blog-card .my-btn {
+  padding: 7px 12px;
   font-size: 15px;
 }
 
@@ -1307,7 +1367,7 @@ Blog Page Style Start
   margin-bottom: 10px;
   color: #000;
 }
-.blog-title:hover { 
+.blog-title:hover {
   color: var(--primary-color);
 }
 
@@ -1315,7 +1375,7 @@ Blog Page Style Start
   font-size: 0.9rem;
   color: #777;
   margin-bottom: 15px;
-} 
+}
 .related-section h5 {
   border-bottom: 2px solid var(--primary-color);
   padding-bottom: 10px;
@@ -1369,7 +1429,8 @@ Blog Page Style End
 Contact Page Style Start
 ==============================================*/
 .contact-banner {
-  background: url('assets/images/contact-banner.jpg') no-repeat center center/cover;
+  background: url("assets/images/contact-banner.jpg") no-repeat center
+    center/cover;
   color: white;
   padding: 80px 0;
   text-align: center;
@@ -1379,29 +1440,30 @@ Contact Page Style Start
   background-color: #f8f9fa;
   padding: 40px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.form-title-text-top{
+.form-title-text-top {
   color: var(--primary-color);
 }
-.send-text-secondary{
+.send-text-secondary {
   color: var(--secondary-color);
 }
-.contact-form input, .contact-form textarea{
-  border:1px solid var(--primary-color)
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid var(--primary-color);
 }
-.contact-form label{
+.contact-form label {
   color: var(--primary-color);
   font-weight: bold;
 }
-.second-title-text{
-  color:var(--secondary-color)
+.second-title-text {
+  color: var(--secondary-color);
 }
 .info-box {
   background-color: #fff;
   padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .info-icon {

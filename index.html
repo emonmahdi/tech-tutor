@@ -1,582 +1,752 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Tutor</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tech Tutor</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
-   <!-- Swiper CSS -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
 
-  <!-- AOS CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Optional for mobile responsiveness -->
+  </head>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <!-- Optional for mobile responsiveness -->
-</head>
-
-<body>
-  <!-- Top Bar Start -->
-  <div class="top-bar-section">
-    <div class="container">
-      <div class="row topbar-row">
-        <div class="col-md-6">
-          <div class="phone-email">
-            <div>
-              <span><i class="fa-solid fa-phone"></i></span>
-              <span>+88 01670-27 30 40</span>
+  <body>
+    <!-- Top Bar Start -->
+    <div class="top-bar-section">
+      <div class="container">
+        <div class="row topbar-row">
+          <div class="col-md-6">
+            <div class="phone-email">
+              <div>
+                <span><i class="fa-solid fa-phone"></i></span>
+                <span>+88 01670-27 30 40</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="social-icon text-end">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <div class="col-md-6">
+            <div class="social-icon text-end">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Top Bar End -->
-  <header>
-    <nav class="navbar navbar-expand-lg custom-navbar px-3" id="mainNavbar">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">
-          Tech Tutor
-          <!-- <img
+    <!-- Top Bar End -->
+    <header>
+      <nav class="navbar navbar-expand-lg custom-navbar px-3" id="mainNavbar">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="index.html">
+            Tech Tutor
+            <!-- <img
               src="assets/images/logo.png"
               class="logo img-fluid"
               alt="Green House Logo"
             /> -->
-        </a>
+          </a>
 
-        <button class="navbar-toggler custom-toggler" type="button" data-toggler>
-          <span class="toggler-icon top-bar"></span>
-          <span class="toggler-icon middle-bar"></span>
-          <span class="toggler-icon bottom-bar"></span>
-        </button>
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-toggler
+          >
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
-          <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Find Tutor</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Contact</a>
-            </li>
-            <!-- <li class="nav-item">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarMenu"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Find Tutor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Contact</a>
+              </li>
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="social-work.html">Social Work</a>
               </li> -->
 
-            <!-- <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
               </li> -->
-          </ul>
-        </div>
+            </ul>
+          </div>
 
-        <div class="d-none d-lg-block">
-          <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn me-2">
-            Login <i class="fas fa-paper-plane contact-icon"></i>
-          </a>
-          <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn">
-            Register <i class="fas fa-paper-plane contact-icon"></i>
-          </a>
+          <div class="d-none d-lg-block">
+            <a
+              href="contact.html"
+              class="my-btn btn-tech-primary log-reg-btn me-2"
+            >
+              Login <i class="fas fa-paper-plane contact-icon"></i>
+            </a>
+            <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn">
+              Register <i class="fas fa-paper-plane contact-icon"></i>
+            </a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <!-- Sticky Navbar -->
-    <nav class="navbar sticky-nav navbar-expand-lg px-3" id="stickyNavbar">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">
-          Tech Tutor
-          <!-- <img
+      <!-- Sticky Navbar -->
+      <nav class="navbar sticky-nav navbar-expand-lg px-3" id="stickyNavbar">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="index.html">
+            Tech Tutor
+            <!-- <img
               src="assets/images/logo.png"
               class="logo img-fluid"
               alt="Green House Logo"
             /> -->
-        </a>
-        <!-- Sticky Navbar -->
-        <button class="navbar-toggler custom-toggler" type="button" data-toggler>
-          <span class="toggler-icon top-bar"></span>
-          <span class="toggler-icon middle-bar"></span>
-          <span class="toggler-icon bottom-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center">
-          <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Find Tutor</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="d-none d-lg-block">
-          <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn me-2">
-            Login <i class="fas fa-paper-plane contact-icon"></i>
           </a>
-          <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn">
-            Register <i class="fas fa-paper-plane contact-icon"></i>
-          </a>
+          <!-- Sticky Navbar -->
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-toggler
+          >
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Find Tutor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-lg-block">
+            <a
+              href="contact.html"
+              class="my-btn btn-tech-primary log-reg-btn me-2"
+            >
+              Login <i class="fas fa-paper-plane contact-icon"></i>
+            </a>
+            <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn">
+              Register <i class="fas fa-paper-plane contact-icon"></i>
+            </a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu d-lg-none" id="mobileMenu">
-      <ul class="list-unstyled mt-4">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="projects.html" class="nav-link">Projects</a></li>
-        <li><a href="social-work.html" class="nav-link">Social Work</a></li>
-        <li><a href="blog.html" class="nav-link">Blog</a></li>
-        <li class="mobile-menu-contact-btn">
-          <a href="contact.html" class="my-btn my-btn-primary contact-btn">
-            Contact Us <i class="fas fa-paper-plane contact-icon"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <!----------------Hero-slider section start----------------->
-  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="container h-100 d-flex align-items-center">
-          <div class="row align-items-center w-100">
-            <!-- Left Column: Text -->
-            <div class="col-md-6 text-dark">
-              <div class="hero-text">
-                <h1>Unlock Your Learning Potential with Tech Tutor</h1>
-                <p>
-                  Empowering learners with personalized education experiences. Whether you're looking to improve your
-                  grades, prepare for exams, or explore new skills, Tech Tutor connects you with expert mentors who
-                  guide you every step of the way—anytime, anywhere.
-                </p>
-                <div class="hero-buttons">
-                  <a href="#" class="btn btn-tech-primary me-3">
-                    Register as Student <i class="fas fa-user-graduate"></i>
-                  </a>
-                  <a href="#" class="btn btn-tech-secondary">
-                    Become a Tutor <i class="fas fa-chalkboard-teacher"></i>
-                  </a>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu d-lg-none" id="mobileMenu">
+        <ul class="list-unstyled mt-4">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="social-work.html" class="nav-link">Social Work</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="mobile-menu-contact-btn">
+            <a href="contact.html" class="my-btn my-btn-primary contact-btn">
+              Contact Us <i class="fas fa-paper-plane contact-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!----------------Hero-slider section start----------------->
+    <div
+      id="heroCarousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="container h-100 d-flex align-items-center">
+            <div class="row align-items-center w-100">
+              <!-- Left Column: Text -->
+              <div class="col-md-6 text-dark">
+                <div class="hero-text">
+                  <h1>Unlock Your Learning Potential with Tech Tutor</h1>
+                  <p>
+                    Empowering learners with personalized education experiences.
+                    Whether you're looking to improve your grades, prepare for
+                    exams, or explore new skills, Tech Tutor connects you with
+                    expert mentors who guide you every step of the way—anytime,
+                    anywhere.
+                  </p>
+                  <div class="hero-buttons">
+                    <a href="#" class="btn btn-tech-primary me-3">
+                      Register as Student <i class="fas fa-user-graduate"></i>
+                    </a>
+                    <a href="#" class="btn btn-tech-secondary">
+                      Become a Tutor <i class="fas fa-chalkboard-teacher"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
 
-            </div>
-
-            <!-- Right Column: Illustration -->
-            <div class="col-md-6 text-end">
-              <img src="assets/images/slider/hero2.png" alt="Tech Tutor" class="img-fluid" style="max-height: 400px;" />
+              <!-- Right Column: Illustration -->
+              <div class="col-md-6 text-end">
+                <img
+                  src="assets/images/slider/hero2.png"
+                  alt="Tech Tutor"
+                  class="img-fluid"
+                  style="max-height: 400px"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="container h-100 d-flex align-items-center">
-          <div class="row align-items-center w-100">
-            <!-- Left Column: Text -->
-            <div class="col-md-6 text-dark">
-              <div class="hero-text">
-                <h1>Learn Anything, Anytime, From Anywhere with Expert Tutors</h1>
-                <p>
-                  Say goodbye to traditional limitations. With Tech Tutor, access live classes, recorded lessons, and
-                  interactive sessions on any device. Our platform ensures that learning continues seamlessly whether
-                  you're at home, in a café, or on the go.
-                </p>
-                <div class="hero-buttons">
-                  <a href="#" class="btn btn-tech-primary me-3">
-                    Join Now <i class="fas fa-paper-plane"></i>
-                  </a>
-                  <a href="#" class="btn btn-tech-secondary">
-                    Explore Courses <i class="fas fa-book-reader"></i>
-                  </a>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="container h-100 d-flex align-items-center">
+            <div class="row align-items-center w-100">
+              <!-- Left Column: Text -->
+              <div class="col-md-6 text-dark">
+                <div class="hero-text">
+                  <h1>
+                    Learn Anything, Anytime, From Anywhere with Expert Tutors
+                  </h1>
+                  <p>
+                    Say goodbye to traditional limitations. With Tech Tutor,
+                    access live classes, recorded lessons, and interactive
+                    sessions on any device. Our platform ensures that learning
+                    continues seamlessly whether you're at home, in a café, or
+                    on the go.
+                  </p>
+                  <div class="hero-buttons">
+                    <a href="#" class="btn btn-tech-primary me-3">
+                      Join Now <i class="fas fa-paper-plane"></i>
+                    </a>
+                    <a href="#" class="btn btn-tech-secondary">
+                      Explore Courses <i class="fas fa-book-reader"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
 
-            </div>
-
-            <!-- Right Column: Illustration -->
-            <div class="col-md-6 text-end">
-              <img src="assets/images/slider/hero3.png" alt="Online Classes" class="img-fluid"
-                style="max-height: 400px;" />
+              <!-- Right Column: Illustration -->
+              <div class="col-md-6 text-end">
+                <img
+                  src="assets/images/slider/hero3.png"
+                  alt="Online Classes"
+                  class="img-fluid"
+                  style="max-height: 400px"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="container h-100 d-flex align-items-center">
-          <div class="row align-items-center w-100">
-            <!-- Left Column: Text -->
-            <div class="col-md-6 text-dark">
-              <div class="hero-text">
-                <h1>A Personalized Tutoring Experience Tailored Just for You</h1>
-                <p>
-                  Tech Tutor offers a smarter approach to education—track your progress with interactive dashboards,
-                  schedule sessions at your convenience, and collaborate with tutors who specialize in your academic
-                  goals. We're redefining the way students and tutors connect in the digital age.
-                </p>
-                <div class="hero-buttons">
-                  <a href="#" class="btn btn-tech-primary me-3">
-                    Get Started <i class="fas fa-arrow-right"></i>
-                  </a>
-                  <a href="#" class="btn btn-tech-secondary">
-                    Learn More <i class="fas fa-info-circle"></i>
-                  </a>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="container h-100 d-flex align-items-center">
+            <div class="row align-items-center w-100">
+              <!-- Left Column: Text -->
+              <div class="col-md-6 text-dark">
+                <div class="hero-text">
+                  <h1>
+                    A Personalized Tutoring Experience Tailored Just for You
+                  </h1>
+                  <p>
+                    Tech Tutor offers a smarter approach to education—track your
+                    progress with interactive dashboards, schedule sessions at
+                    your convenience, and collaborate with tutors who specialize
+                    in your academic goals. We're redefining the way students
+                    and tutors connect in the digital age.
+                  </p>
+                  <div class="hero-buttons">
+                    <a href="#" class="btn btn-tech-primary me-3">
+                      Get Started <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn btn-tech-secondary">
+                      Learn More <i class="fas fa-info-circle"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
 
-            </div>
-
-            <!-- Right Column: Illustration -->
-            <div class="col-md-6 text-end">
-              <img src="assets/images/slider/hero4.png" alt="Tutor Dashboard" class="img-fluid"
-                style="max-height: 400px;" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <!---------------- Hero-slider section End ----------------->
-  <!---------------- Tutor section Start ----------------->
-  <section id="tutor-section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Our Tutor</h2>
-        <p>We are Provide Best Tutors</p>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="single-tutor">
-            <img src="assets/images/john.jpg" alt="tutor img" class="img-fluid">
-           <div class="single-tutor-content px-4">
-            <h3>Md Tanvir Hossain</h3>
-            <span>Math Speacialty</span>
-            <div class="ratings">
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-            </div>
-            <div class="tutor-social-icon text-center">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="single-tutor">
-            <img src="assets/images/john.jpg" alt="tutor img" class="img-fluid">
-           <div class="single-tutor-content px-4">
-            <h3>Md Tanvir Hossain</h3>
-            <span>Math Speacialty</span>
-            <div class="ratings">
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-            </div>
-            <div class="tutor-social-icon text-center">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="single-tutor">
-            <img src="assets/images/john.jpg" alt="tutor img" class="img-fluid">
-           <div class="single-tutor-content px-4">
-            <h3>Md Tanvir Hossain</h3>
-            <span>Math Speacialty</span>
-            <div class="ratings">
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-            </div>
-            <div class="tutor-social-icon text-center">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="single-tutor">
-            <img src="assets/images/john.jpg" alt="tutor img" class="img-fluid">
-           <div class="single-tutor-content px-4">
-            <h3>Md Tanvir Hossain</h3>
-            <span>Math Speacialty</span>
-            <div class="ratings">
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-              <span><i class="fa-solid fa-star"></i></span>
-            </div>
-            <div class="tutor-social-icon text-center">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-           </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!---------------- Tutor section End ----------------->
-  <!---------------- Why Choose Us section Start ----------------->
-  <section class="benefits-section py-5" style="background-color: #f9fbfd;">
-    <div class="container">
-      <h2 class="text-center mb-4" style="font-size: 2.5rem; font-weight: 700; color: #1e2a38;">Why Choose <span class="text-primary">Tech Tutor</span>?</h2>
-      <p class="text-center mb-5 text-muted">We provide a powerful, flexible platform that supports both students and tutors.</p>
-  
-      <div class="row mb-5">
-        <!-- Benefit 1 -->
-        <div class="col-md-4 mb-4">
-          <div class="benefit-box text-center p-4 bg-white rounded-4 shadow-sm h-100">
-            <div class="benefit-icon mb-3">
-              <i class="fas fa-calendar-check fa-2x text-primary"></i>
-            </div>
-            <h5 class="benefit-heading fw-semibold">Flexible Scheduling</h5>
-            <p class="benefit-text text-muted">Students can book sessions anytime that fits their schedule.</p>
-          </div>
-        </div>
-  
-        <!-- Benefit 2 -->
-        <div class="col-md-4 mb-4">
-          <div class="benefit-box text-center p-4 bg-white rounded-4 shadow-sm h-100">
-            <div class="benefit-icon mb-3">
-              <i class="fas fa-shield-alt fa-2x text-success"></i>
-            </div>
-            <h5 class="benefit-heading fw-semibold">Verified Tutors</h5>
-            <p class="benefit-text text-muted">Only qualified, verified tutors are allowed on the platform.</p>
-          </div>
-        </div>
-  
-        <!-- Benefit 3 -->
-        <div class="col-md-4 mb-4">
-          <div class="benefit-box text-center p-4 bg-white rounded-4 shadow-sm h-100">
-            <div class="benefit-icon mb-3">
-              <i class="fas fa-user-graduate fa-2x text-info"></i>
-            </div>
-            <h5 class="benefit-heading fw-semibold">One-on-One Attention</h5>
-            <p class="benefit-text text-muted">Get personalized learning with direct interaction.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!---------------- Why Choose Us section End ----------------->
-
-  <!---------------- Counter section Start ----------------->
-  <section id="counter-section" class="counter-section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Achivments</h2>
-        <p>Strength in Numbers</p>
-      </div>
-      <div class="row text-center">
-        <div class="col-6 col-md-3 mb-4">
-          <div class="single-counter-item">
-            <h2>10k+</h2>
-            <p>Learners & counting</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 mb-4">
-          <div class="single-counter-item">
-            <h2>50+</h2>
-            <p>Total Courses</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 mb-4">
-          <div class="single-counter-item">
-            <h2>40+</h2>
-            <p>Total Teachers</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 mb-4">
-          <div class="single-counter-item">
-            <h2>80%+</h2>
-            <p>Successful Students</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- counter section end -->
-<!-- Testimonials section start -->
-<section id="testimonials-section" class="testimonials-section">
-  <div class="container">
-    <div class="section-title"> 
-      <h2>Testimonials</h2>
-      <p>Our Client Says</p>
-    </div>
-    <div class="swiper testimonial-slider">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide">
-          <div class="single-testimonial">
-            <div class="reviews">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p>
-              “Amazing support and lightning‑fast delivery. I went from zero
-              to hero in just a week!”
-            </p>
-            <div class="testimonial-footer">
-              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe" />
-              <div>
-                <h4>John Doe</h4>
-                <p>Web Developer</p>
+              <!-- Right Column: Illustration -->
+              <div class="col-md-6 text-end">
+                <img
+                  src="assets/images/slider/hero4.png"
+                  alt="Tutor Dashboard"
+                  class="img-fluid"
+                  style="max-height: 400px"
+                />
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
-          <div class="single-testimonial">
-            <div class="reviews">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <p>
-              “Great course experience, really helpful instructors! I
-              finally understand async JavaScript.”
-            </p>
-            <div class="testimonial-footer">
-              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Jane Smith" />
-              <div>
-                <h4>Jane Smith</h4>
-                <p>UI Designer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
-          <div class="single-testimonial">
-            <div class="reviews">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <p>
-              “Excellent community and super‑practical content. Loved the
-              real‑life projects.”
-            </p>
-            <div class="testimonial-footer">
-              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Ali Rahman" />
-              <div>
-                <h4>Ali Rahman</h4>
-                <p>Digital Marketer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="swiper-slide">
-          <div class="single-testimonial">
-            <div class="reviews">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <p>
-              “Good starting point for beginners. Would recommend the JS
-              path.”
-            </p>
-            <div class="testimonial-footer">
-              <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Sara Khan" />
-              <div>
-                <h4>Sara Khan</h4>
-                <p>Student</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- …add more slides if you like… -->
       </div>
 
-      <!-- pagination bullets -->
-      <div class="swiper-pagination"></div>
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </div>
-</section>
-<!-- Testimonials section end -->
 
+    <!---------------- Hero-slider section End ----------------->
+    <!---------------- About Us section Start ----------------->
+    <section id="about-us-section">
+      <div class="container"> 
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-img d-flex align-items-center gap-3 pt-3">
+              <div>
+                <img src="assets/images/about/about-img1.png" class="img-fluid" alt="">
+              </div>
+              <div>
+                <div class="discount-offer">
+                  <h4>20% Off <br> For Classes</h4>
+                </div>
+                <img src="assets/images/about/about-img1.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="section-title">
+              <h6> <li>About Tech Tutor</li></h6>
+              <h2>The Place Where You Can Achieve</h2> 
+              <p>Welcome to EduAll, where learning knows no bounds. Whether you are a student, professional, or lifelong learner...</p> 
+            </div>
+            <div class="our-mission">
+              <div class="mission-icon">
+                 <span><i class="fa-regular fa-font-awesome"></i></span>
+              </div>
+              <div class="mission-text">
+                <h4>Our Mission</h4>
+                <p> Driven by a team of dedicated educators, technologists, and visionaries, we strive to create a supportive </p>
+              </div>
+            </div>
+            <div class="our-vision">
+              <div class="vision-icon">
+                 <span><i class="fa-regular fa-clipboard"></i></span>
+              </div>
+              <div class="vision-text">
+                <h4>Our Vision</h4>
+                <p> Driven by a team of dedicated educators, technologists, and visionaries, we strive to create a supportive </p>
+              </div>
+            </div>
+            <span class="border-dashed"><hr></span>
+            <div class="ceo-signature">
+              <div>
+                <img src="assets/images/about/ceo-img.png" class="img-fluid ceo-img" alt="">
+              </div>
+              <div>
+                <img src="assets/images/about/signature.png" class="img-fluid ceo-sign" alt="">
+                <h6>Abdur Rahman</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------- About Us section End ----------------->
+    <!---------------- Tutor section Start ----------------->
+    <section id="tutor-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Tutor</h2>
+          <p>We are Provide Best Tutors</p>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="single-tutor">
+              <img
+                src="assets/images/john.jpg"
+                alt="tutor img"
+                class="img-fluid"
+              />
+              <div class="single-tutor-content px-4">
+                <h3>Md Tanvir Hossain</h3>
+                <span>Math Speacialty</span>
+                <div class="ratings">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                </div>
+                <div class="tutor-social-icon text-center">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="single-tutor">
+              <img
+                src="assets/images/john.jpg"
+                alt="tutor img"
+                class="img-fluid"
+              />
+              <div class="single-tutor-content px-4">
+                <h3>Md Tanvir Hossain</h3>
+                <span>Math Speacialty</span>
+                <div class="ratings">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                </div>
+                <div class="tutor-social-icon text-center">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="single-tutor">
+              <img
+                src="assets/images/john.jpg"
+                alt="tutor img"
+                class="img-fluid"
+              />
+              <div class="single-tutor-content px-4">
+                <h3>Md Tanvir Hossain</h3>
+                <span>Math Speacialty</span>
+                <div class="ratings">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                </div>
+                <div class="tutor-social-icon text-center">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="single-tutor">
+              <img
+                src="assets/images/john.jpg"
+                alt="tutor img"
+                class="img-fluid"
+              />
+              <div class="single-tutor-content px-4">
+                <h3>Md Tanvir Hossain</h3>
+                <span>Math Speacialty</span>
+                <div class="ratings">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                </div>
+                <div class="tutor-social-icon text-center">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------- Tutor section End ----------------->
+    <!---------------- Why Choose Us section Start ----------------->
+    <section class="benefits-section py-5" style="background-color: #f9fbfd">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Choose Us</h2>
+          <p>
+            We provide a powerful, flexible platform that supports both students
+            and tutors.
+          </p>
+        </div>
 
-  <!---------------- Newsletter-section section Start ----------------->
-  <!-- <section class="newsletter-section text-white py-5">
+        <div class="row mb-5">
+          <!-- Benefit 1 -->
+          <div class="col-md-4 mb-4">
+            <div
+              class="benefit-box text-center p-4 bg-white rounded-4 shadow-sm h-100"
+            >
+              <div class="benefit-icon mb-3">
+                <i class="fas fa-calendar-check fa-2x text-primary"></i>
+              </div>
+              <h5 class="benefit-heading fw-semibold">Flexible Scheduling</h5>
+              <p class="benefit-text text-muted">
+                Students can book sessions anytime that fits their schedule.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="col-md-4 mb-4">
+            <div
+              class="benefit-box text-center p-4 bg-white rounded-4 shadow-sm h-100"
+            >
+              <div class="benefit-icon mb-3">
+                <i class="fas fa-shield-alt fa-2x text-success"></i>
+              </div>
+              <h5 class="benefit-heading fw-semibold">Verified Tutors</h5>
+              <p class="benefit-text text-muted">
+                Only qualified, verified tutors are allowed on the platform.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="col-md-4 mb-4">
+            <div
+              class="benefit-box text-center p-4 bg-white rounded-4 shadow-sm h-100"
+            >
+              <div class="benefit-icon mb-3">
+                <i class="fas fa-user-graduate fa-2x text-info"></i>
+              </div>
+              <h5 class="benefit-heading fw-semibold">One-on-One Attention</h5>
+              <p class="benefit-text text-muted">
+                Get personalized learning with direct interaction.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------- Why Choose Us section End ----------------->
+
+    <!---------------- Counter section Start ----------------->
+    <section id="counter-section" class="counter-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Achivments</h2>
+          <p>Strength in Numbers</p>
+        </div>
+        <div class="row text-center">
+          <div class="col-6 col-md-3 mb-4">
+            <div class="single-counter-item">
+              <h2>10k+</h2>
+              <p>Learners & counting</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="single-counter-item">
+              <h2>50+</h2>
+              <p>Total Courses</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="single-counter-item">
+              <h2>40+</h2>
+              <p>Total Teachers</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="single-counter-item">
+              <h2>80%+</h2>
+              <p>Successful Students</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- counter section end -->
+    <!-- Testimonials section start -->
+    <section id="testimonials-section" class="testimonials-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Our Client Says</p>
+        </div>
+        <div class="swiper testimonial-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="single-testimonial">
+                <div class="reviews">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  “Amazing support and lightning‑fast delivery. I went from zero
+                  to hero in just a week!”
+                </p>
+                <div class="testimonial-footer">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    alt="John Doe"
+                  />
+                  <div>
+                    <h4>John Doe</h4>
+                    <p>Web Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="single-testimonial">
+                <div class="reviews">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>
+                  “Great course experience, really helpful instructors! I
+                  finally understand async JavaScript.”
+                </p>
+                <div class="testimonial-footer">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/65.jpg"
+                    alt="Jane Smith"
+                  />
+                  <div>
+                    <h4>Jane Smith</h4>
+                    <p>UI Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="single-testimonial">
+                <div class="reviews">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>
+                  “Excellent community and super‑practical content. Loved the
+                  real‑life projects.”
+                </p>
+                <div class="testimonial-footer">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/75.jpg"
+                    alt="Ali Rahman"
+                  />
+                  <div>
+                    <h4>Ali Rahman</h4>
+                    <p>Digital Marketer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="single-testimonial">
+                <div class="reviews">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>
+                  “Good starting point for beginners. Would recommend the JS
+                  path.”
+                </p>
+                <div class="testimonial-footer">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/50.jpg"
+                    alt="Sara Khan"
+                  />
+                  <div>
+                    <h4>Sara Khan</h4>
+                    <p>Student</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- …add more slides if you like… -->
+          </div>
+
+          <!-- pagination bullets -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials section end -->
+
+    <!---------------- Newsletter-section section Start ----------------->
+    <!-- <section class="newsletter-section text-white py-5">
     <div class="overlay">
       <div class="container text-center">
         <h2 class="display-5 fw-bold mb-3">Stay Updated with Tech Tutor</h2>
@@ -589,116 +759,143 @@
     </div>
   </section> -->
 
-  <section id="newsletter-section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Stay Updated </h2>
-        <p>Subscribe to get the latest learning tips, news, and tutor updates in your inbox.</p>
-      </div>
-      <div class="subscribe-form text-center">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <form class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-              <input type="email" class="form-control w-100 w-md-50 rounded-pill px-4" placeholder="Enter your email" required>
-              <button type="submit" class="btn btn-primary px-4 rounded-pill">Subscribe</button>
-            </form>
+    <section id="newsletter-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Stay Updated</h2>
+          <p>
+            Subscribe to get the latest learning tips, news, and tutor updates
+            in your inbox.
+          </p>
+        </div>
+        <div class="subscribe-form text-center">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <form
+                class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+              >
+                <input
+                  type="email"
+                  class="form-control w-100 w-md-50 rounded-pill px-4"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button type="submit" class="btn btn-primary px-4 rounded-pill">
+                  Subscribe
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-<!---------------- Newsletter-section section End ----------------->
+    </section>
 
-  <footer class="text-white pt-5 pb-4">
-    <div class="container text-md-left">
-      <div class="row text-md-left">
+    <!---------------- Newsletter-section section End ----------------->
 
-        <!-- Logo & Description -->
-        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
-          <h5 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-graduation-cap me-2"></i>Tech Tutor
-          </h5>
-          <p>
-            Tech Tutor connects students with top-rated tutors across subjects and grades. Learn smarter, grow faster,
-            and achieve your academic goals.
-          </p>
+    <footer class="text-white pt-5 pb-4">
+      <div class="container text-md-left">
+        <div class="row text-md-left">
+          <!-- Logo & Description -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+            <h5 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-graduation-cap me-2"></i>Tech Tutor
+            </h5>
+            <p>
+              Tech Tutor connects students with top-rated tutors across subjects
+              and grades. Learn smarter, grow faster, and achieve your academic
+              goals.
+            </p>
+          </div>
+
+          <!-- Useful Links -->
+          <div
+            class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-menu-links"
+          >
+            <h6 class="text-uppercase fw-bold mb-4">Quick Links</h6>
+            <p><a href="#" class="">Home</a></p>
+            <p><a href="#" class="">Courses</a></p>
+            <p><a href="#" class="">Tutors</a></p>
+            <p><a href="#" class="">Contact</a></p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-2"></i> 123 Main Street, Barisal, BD</p>
+            <p><i class="fas fa-envelope me-2"></i> support@techtutor.com</p>
+            <p><i class="fas fa-phone me-2"></i> +880 1234-567890</p>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Subscribe</h6>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your email"
+                />
+              </div>
+              <button
+                type="submit"
+                class="my-btn my-btn-primary subscribe-btn w-100"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
 
-        <!-- Useful Links -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-menu-links">
-          <h6 class="text-uppercase fw-bold mb-4">Quick Links</h6>
-          <p><a href="#" class="">Home</a></p>
-          <p><a href="#" class="">Courses</a></p>
-          <p><a href="#" class="">Tutors</a></p>
-          <p><a href="#" class="">Contact</a></p>
+        <!-- Social Media & Copyright -->
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <p>
+              &copy; 2025 Tech Tutor. All rights reserved. Developed By
+              <a href="#" class="developed-link" target="_blank"
+                >Freelance IT</a
+              >
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
-
-        <!-- Contact Info -->
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-2"></i> 123 Main Street, Barisal, BD</p>
-          <p><i class="fas fa-envelope me-2"></i> support@techtutor.com</p>
-          <p><i class="fas fa-phone me-2"></i> +880 1234-567890</p>
-        </div>
-
-        <!-- Newsletter -->
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">Subscribe</h6>
-          <form>
-            <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Your email" />
-            </div>
-            <button type="submit" class="my-btn my-btn-primary subscribe-btn w-100">
-              Subscribe
-            </button>
-          </form>
-        </div>
-
       </div>
+    </footer>
 
-      <!-- Social Media & Copyright -->
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <p>&copy; 2025 Tech Tutor. All rights reserved. Developed By <a href="#" class="developed-link" target="_blank">Freelance IT</a></p>
-        </div>
-        <div class="col-md-6 text-md-end">
-          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
+    <!-- scroll to top -->
+    <div class="scroll-top">
+      <a href="#" class="scroll-top-icon">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
     </div>
-  </footer>
 
-
-
-
-  <!-- scroll to top -->
-  <div class="scroll-top">
-    <a href="#" class="scroll-top-icon">
-      <i class="fa-solid fa-arrow-up"></i>
-    </a>
-  </div>
-
-  <!-- Bootstrap JS & Custom JS -->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="js/sticky.js"></script>
-  <script src="js/heroSlider.js"></script>
-  <script src="js/testimonial.js"></script>
-  <script src="js/faq.js"></script>
-  <script src="js/counter.js"></script>
-  <script src="js/client.js"></script>
-  <script src="js/scrollTop.js"></script>
-  <script src="js/script.js"></script>
-  <!-- AOS JS -->
-  <script>
-    AOS.init();
-  </script>
-</body>
-
+    <!-- Bootstrap JS & Custom JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/heroSlider.js"></script>
+    <script src="js/testimonial.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/scrollTop.js"></script>
+    <script src="js/script.js"></script>
+    <!-- AOS JS -->
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
