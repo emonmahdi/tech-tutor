@@ -17,7 +17,7 @@
   --bg-light: #f0f4f8; /* Light background */
   --text-color: #1a1a1a; /* Body text */
   --heading-text-color: #1a1a1a; /* Body text */
-  --sub-heading-text-color: #444C60; /* Body text */
+  --sub-heading-text-color: #444c60; /* Body text */
   --btn-hover: #084298; /* Dark blue hover */
   --btn-light: #e7f1ff; /* Light blue background */
   --btn-outline: #d0e3ff; /* Light outline */
@@ -128,7 +128,7 @@ Section Title
   margin-bottom: 15px;
   text-transform: uppercase;
   color: var(--heading-text-color);
-  position: relative; 
+  position: relative;
   display: inline-block;
 }
 
@@ -689,19 +689,19 @@ About Section Start
   background-color: #f1f5fa;
   border-radius: 50%;
   border: 1px solid #ddd;
-  color:var(--primary);
+  color: var(--primary);
   font-size: 20px;
 }
 .mission-text h4,
 .vision-text h4 {
   margin-bottom: 6px;
-  color:var(--sub-heading-text-color)
+  color: var(--sub-heading-text-color);
 }
 .border-dashed hr {
   border: none;
   border-top: 1px dashed #000; /* black dashed line, 2px thick */
 }
-.ceo-signature{
+.ceo-signature {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -712,8 +712,8 @@ About Section End
 /* ====================================
 Tutor Area Section Start
 ========================================*/
-#tutor-section{
-  background-color: #EFF5FC;
+#tutor-section {
+  background-color: #eff5fc;
 }
 .single-tutor {
   text-align: center;
@@ -730,7 +730,6 @@ Tutor Area Section Start
   padding: 10px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* subtle 3D shadow */
   border-radius: 8px;
-  
 }
 
 .single-tutor:hover {
@@ -771,29 +770,28 @@ Benifit Section Start
   padding: 40px 0;
 }
 
-.benefits-section .section-title{
+.benefits-section .section-title {
   width: 100%;
   text-align: left;
 }
- 
 
-.choose-us-list li{
+.choose-us-list li {
   list-style: none;
 }
-.choose-us-list i{
+.choose-us-list i {
   color: var(--primary);
   margin-right: 5px;
 }
 
-.why-choose-us-right-img{
+.why-choose-us-right-img {
   position: relative;
 }
-.why-choose-us-right-img:after{
+.why-choose-us-right-img:after {
   position: absolute;
-  content:'';
+  content: "";
   top: 0;
   left: 0;
-  background:url('../assets/images/shape2.png')
+  background: url("../assets/images/shape2.png");
 }
 
 @media (max-width: 768px) {
@@ -811,6 +809,7 @@ Tutor Area Section End
 /* =================Counter Section Start============================ */
 .counter-section .section-title {
   margin-bottom: 80px;
+  color: #000;
 }
 .single-counter-item {
   text-align: center;
@@ -818,9 +817,21 @@ Tutor Area Section End
 }
 .single-counter-item h2 {
   margin-bottom: 5px;
-  color: #fff;
+  color: #000;
   font-size: 40px;
   font-weight: 700;
+}
+.item-bg-one {
+  background-color: #f2f9ff;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.item-bg-two {
+  background-color: #fdf6f2;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 /* =================Counter Section End============================ */
 
@@ -829,11 +840,16 @@ Tutor Area Section End
   padding: 60px 0;
   /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../assets/images/hero-2.jpg"); */
+  background-color: #eff5fc;
   background-size: cover;
   background-position: center center;
   height: 100%;
   background-repeat: no-repeat;
 }
+/* .testimonials-section .section-title{
+  width: 100%;
+  text-align: center;
+} */
 .testimonial-area {
   padding: 60px 0;
   background: #f9f9f9;
@@ -929,88 +945,6 @@ Tutor Area Section End
 
 /* =================Subscribe Section End============================ */
 
-/* =================Counter Section Start ================*/
-
-#counter-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/assets/images/counter-bg.jpg");
-  height: auto;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-#counter-section .section-title h2::before {
-  background-color: #fff;
-}
-
-/* Decorative diamond */
-#counter-section .section-title h2::after {
-  background: var(--secondary);
-  border: 2px solid var(--primary);
-}
-
-.single-counter {
-  /* padding: 30px;
-  background-color: #2EA6F7;
-  border-radius: 10px; */
-  background-color: #ffffff;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  color: #000;
-}
-
-.single-counter .counter-icon {
-  font-size: 30px;
-  margin-bottom: 5px;
-  color: var(--primary-color);
-}
-.single-counter .counter-img {
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
-  display: inline-block;
-  margin-bottom: 10px;
-}
-.single-counter h3 {
-  color: #000;
-  font-weight: 600;
-}
-
-@media (max-width: 768px) {
-  #counter-section {
-    /* height: 180px;   */
-    padding: 40px 0;
-  }
-  .single-counter {
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  #counter-section {
-    /* height: 150px;  */
-    padding: 30px 0;
-  }
-  .single-counter {
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-}
-
-/* =================Counter Section End ==================*/
 /* ------------------------------------------------
    FAQ Section Start 
 --------------------------------------------------- */

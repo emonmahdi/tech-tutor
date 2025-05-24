@@ -156,3 +156,88 @@ To connect students with tutors, allowing tutors to create accounts, offer class
 ---
 
 Would you like a **full UI wireframe**, **backend structure**, or **project breakdown by sprints**? I can help you step-by-step.
+
+
+
+/* =================Counter Section Start ================*/
+
+#counter-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/assets/images/counter-bg.jpg");
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#counter-section .section-title h2::before {
+  background-color: #fff;
+}
+
+/* Decorative diamond */
+#counter-section .section-title h2::after {
+  background: var(--secondary);
+  border: 2px solid var(--primary);
+}
+
+.single-counter {
+  /* padding: 30px;
+  background-color: #2EA6F7;
+  border-radius: 10px; */
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #000;
+}
+
+.single-counter .counter-icon {
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+.single-counter .counter-img {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.single-counter h3 {
+  color: #000;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  #counter-section {
+    /* height: 180px;   */
+    padding: 40px 0;
+  }
+  .single-counter {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #counter-section {
+    /* height: 150px;  */
+    padding: 30px 0;
+  }
+  .single-counter {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+/* =================Counter Section End ==================*/
