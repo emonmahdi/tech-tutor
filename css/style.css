@@ -128,8 +128,7 @@ Section Title
   margin-bottom: 15px;
   text-transform: uppercase;
   color: var(--heading-text-color);
-  position: relative;
-  padding-bottom: 15px;
+  position: relative; 
   display: inline-block;
 }
 
@@ -713,19 +712,32 @@ About Section End
 /* ====================================
 Tutor Area Section Start
 ========================================*/
+#tutor-section{
+  background-color: #EFF5FC;
+}
 .single-tutor {
   text-align: center;
-  border: 3px solid var(--secondary);
+  /* border: 3px solid var(--secondary); */
   border-radius: 5px;
   margin-top: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .single-tutor img {
   /* border-radius: 50%;  */
 }
 .single-tutor-content {
-  background-color: var(--secondary);
+  background-color: white;
   padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* subtle 3D shadow */
+  border-radius: 8px;
+  
 }
+
+.single-tutor:hover {
+  transform: translateY(-5px); /* lift on hover */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* deeper shadow on hover */
+}
+
 .ratings span i {
   color: #ffd60a;
 }
@@ -737,67 +749,51 @@ Tutor Area Section Start
   /* margin-bottom: -80px; */
 }
 .tutor-social-icon a {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
   display: inline-block;
   border-radius: 50%;
   color: #000;
 }
 .tutor-social-icon a:hover {
-  color: #fff;
+  color: var(--primary);
+}
+.student-count {
+  margin-bottom: 0;
+  font-weight: bold;
 }
 /* ====================================
 Benifit Section Start
 ========================================*/
 .benefits-section {
   background: #f9fbfd;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
-.benefits-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #1e2a38;
-  text-align: center;
-  margin-bottom: 20px;
+.benefits-section .section-title{
+  width: 100%;
+  text-align: left;
+}
+ 
+
+.choose-us-list li{
+  list-style: none;
+}
+.choose-us-list i{
+  color: var(--primary);
+  margin-right: 5px;
 }
 
-.benefit-box {
-  background: white;
-  border-radius: 12px;
-  padding: 30px 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease;
-  height: 100%;
+.why-choose-us-right-img{
+  position: relative;
 }
-
-.benefit-box:hover {
-  transform: translateY(-8px);
-}
-
-.benefit-icon {
-  font-size: 2rem;
-  color: #007bff;
-  margin-bottom: 15px;
-}
-
-.benefit-heading {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #34495e;
-}
-
-.benefit-text {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.section-subtitle {
-  text-align: center;
-  color: #666;
-  margin-bottom: 50px;
-  font-size: 1rem;
+.why-choose-us-right-img:after{
+  position: absolute;
+  content:'';
+  top: 0;
+  left: 0;
+  background:url('../assets/images/shape2.png')
 }
 
 @media (max-width: 768px) {
