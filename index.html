@@ -105,6 +105,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="services.html">Contact</a>
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dashboardDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dashboard
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dashboardDropdown">
+                  <li><a class="dropdown-item" href="student-dashboard.html">Student Dashboard</a></li>
+                  <li><a class="dropdown-item" href="tutor-dashboard.html">Tutor Dashboard</a></li>
+                </ul>
+              </li>
+              
               <!-- <li class="nav-item">
                 <a class="nav-link" href="social-work.html">Social Work</a>
               </li> -->
@@ -116,13 +126,13 @@
           </div>
 
           <div class="d-none d-lg-block">
-            <a
-              href="contact.html"
+           <a
+              href="login.html"
               class="my-btn btn-tech-primary log-reg-btn me-2"
             >
               Login <i class="fas fa-paper-plane contact-icon"></i>
             </a>
-            <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn">
+            <a href="registration.html" class="my-btn btn-tech-primary log-reg-btn">
               Register <i class="fas fa-paper-plane contact-icon"></i>
             </a>
           </div>
@@ -167,13 +177,13 @@
             </ul>
           </div>
           <div class="d-none d-lg-block">
-            <a
-              href="contact.html"
+           <a
+              href="login.html"
               class="my-btn btn-tech-primary log-reg-btn me-2"
             >
               Login <i class="fas fa-paper-plane contact-icon"></i>
             </a>
-            <a href="contact.html" class="my-btn btn-tech-primary log-reg-btn">
+            <a href="registration.html" class="my-btn btn-tech-primary log-reg-btn">
               Register <i class="fas fa-paper-plane contact-icon"></i>
             </a>
           </div>
@@ -806,8 +816,10 @@
   </section> -->
 
     <section id="newsletter-section">
-      <div class="container">
+      <div class="container newsletter-container"> 
         <div class="section-title">
+          <h6><li>Subscribe Here</li></h6>
+          <br>
           <h2>Stay Updated</h2>
           <p>
             Subscribe to get the latest learning tips, news, and tutor updates
@@ -826,7 +838,7 @@
                   placeholder="Enter your email"
                   required
                 />
-                <button type="submit" class="btn btn-primary px-4 rounded-pill">
+                <button type="submit" class="btn btn-subscribe px-4 rounded-pill">
                   Subscribe
                 </button>
               </form>

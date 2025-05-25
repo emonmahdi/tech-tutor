@@ -936,13 +936,32 @@ Tutor Area Section End
 /* =================Subscribe Section Start============================ */
 #newsletter-section {
   padding: 40px 0;
-  background-color: #e1edff;
+  /* background-color: #e1edff; */
   overflow: hidden;
+}
+#newsletter-section .section-title h6{
+  color:#fff;
+}
+#newsletter-section .section-title p{
+  color:#fff;
 }
 #newsletter-section input {
   border: 1px solid var(--primary);
 }
-
+.newsletter-container{
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 30px 0;
+}
+.btn-subscribe{
+  background-color: var(--secondary);
+  border-radius: 5px;
+  color:#000; 
+}
+.btn-subscribe:hover{
+  background-color: #000;
+  color:#fff;
+}
 /* =================Subscribe Section End============================ */
 
 /* ------------------------------------------------
@@ -1355,59 +1374,33 @@ Blog Page Style Start
 /* ===========================================
 Blog Page Style End
 ==============================================*/
+ 
 /* ===========================================
-Contact Page Style Start
+Registration Page Style Start
 ==============================================*/
-.contact-banner {
-  background: url("assets/images/contact-banner.jpg") no-repeat center
-    center/cover;
-  color: white;
-  padding: 80px 0;
-  text-align: center;
+#register-section .form-label {
+  font-weight: 500;
 }
 
-.contact-form {
+#register-section form {
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  border-radius: 10px;
   background-color: #f8f9fa;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.form-title-text-top {
-  color: var(--primary-color);
-}
-.send-text-secondary {
-  color: var(--secondary-color);
-}
-.contact-form input,
-.contact-form textarea {
-  border: 1px solid var(--primary-color);
-}
-.contact-form label {
-  color: var(--primary-color);
+
+#studentForm label{
   font-weight: bold;
 }
-.second-title-text {
-  color: var(--secondary-color);
-}
-.info-box {
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+#studentForm{
+  background-color: #000;
 }
 
-.info-icon {
-  font-size: 24px;
-  margin-right: 10px;
-  color: #198754;
-}
-
-iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-  border-radius: 8px;
+@media (max-width: 576px) {
+  #register-section img {
+    max-height: 250px;
+  }
 }
 /* ===========================================
-Contact Page Style End
+Registration Page Style End
 ==============================================*/
